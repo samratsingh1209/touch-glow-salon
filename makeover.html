@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Touch & Glow Salon and Academy</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Arial;
+background:#fff5f8;
+color:#333;
+}
+
+header{
+background:linear-gradient(45deg,#ff4da6,#ff99cc);
+color:white;
+padding:40px;
+text-align:center;
+}
+
+nav{
+background:white;
+padding:15px;
+text-align:center;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+position:sticky;
+top:0;
+}
+
+nav a{
+margin:10px;
+text-decoration:none;
+font-weight:bold;
+color:#ff4da6;
+}
+
+.hero{
+background:#ffe6f2;
+padding:120px 20px;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+section{
+padding:60px 20px;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+}
+
+.services{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+}
+
+.service{
+background:white;
+padding:20px;
+width:220px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.price{
+font-weight:bold;
+color:#ff4da6;
+}
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+gap:15px;
+justify-content:center;
+}
+
+.gallery img{
+width:250px;
+border-radius:10px;
+}
+
+.booking{
+max-width:400px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.booking input,
+.booking select{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+.booking button{
+background:#ff4da6;
+color:white;
+border:none;
+padding:12px;
+width:100%;
+border-radius:6px;
+}
+
+.star-rating{
+text-align:center;
+font-size:40px;
+cursor:pointer;
+color:#ccc;
+}
+
+.star:hover{
+color:gold;
+}
+
+.star.active{
+color:gold;
+}
+
+#ratingResult{
+text-align:center;
+font-weight:bold;
+margin-top:10px;
+}
+
+.review-box{
+max-width:500px;
+margin:auto;
+text-align:center;
+}
+
+.review-box textarea{
+width:100%;
+height:80px;
+margin-top:10px;
+}
+
+.review{
+background:#ffe6f2;
+padding:15px;
+margin:10px auto;
+max-width:600px;
+border-radius:8px;
+}
+
+.contact{
+text-align:center;
+line-height:1.8;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+}
+
+footer{
+background:#ff4da6;
+color:white;
+padding:30px;
+text-align:center;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Touch & Glow Salon and Academy</h1>
+<p>Beauty • Makeup • Hair • Skincare</p>
+
+</header>
+
+<nav>
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#booking">Booking</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="hero">
+
+<h1>Your Beauty Our Passion</h1>
+<p>Professional Beauty Services in Badlapur</p>
+
+</div>
+
+<section id="about">
+
+<h2>About Our Salon</h2>
+
+<p style="text-align:center;max-width:700px;margin:auto">
+
+Touch & Glow Salon and Academy owned by Priti Sharma offers
+professional beauty services including bridal makeup, hair styling,
+facial treatments, manicure and pedicure.
+
+</p>
+
+</section>
+
+<section id="services">
+
+<h2>Services & Price</h2>
+
+<div class="services">
+
+<div class="service">
+<h3>Facial</h3>
+<p class="price">Starting ₹400</p>
+</div>
+
+<div class="service">
+<h3>Hair Cut</h3>
+<p class="price">Starting ₹99</p>
+</div>
+
+<div class="service">
+<h3>Bridal Makeup</h3>
+<p class="price">₹7000</p>
+</div>
+
+<div class="service">
+<h3>Pedicure</h3>
+<p class="price">₹350</p>
+</div>
+
+<div class="service">
+<h3>Manicure</h3>
+<p class="price">₹350</p>
+</div>
+
+<div class="service">
+<h3>Hair Smoothening</h3>
+<p class="price">Starting ₹3000</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="gallery">
+
+<h2>Salon Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e">
+<img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f">
+<img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1">
+<img src="https://images.unsplash.com/photo-1519741497674-611481863552">
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<h2>Book Appointment</h2>
+
+<div class="booking">
+
+<input type="text" placeholder="Your Name">
+<input type="tel" placeholder="Phone Number">
+
+<select>
+<option>Select Service</option>
+<option>Facial</option>
+<option>Hair Cut</option>
+<option>Bridal Makeup</option>
+<option>Pedicure</option>
+<option>Manicure</option>
+</select>
+
+<input type="date">
+
+<button onclick="book()">Book Appointment</button>
+
+</div>
+
+</section>
+
+<section id="reviews">
+
+<h2>Customer Rating</h2>
+
+<div class="star-rating">
+
+<span class="star" onclick="rate(1)">★</span>
+<span class="star" onclick="rate(2)">★</span>
+<span class="star" onclick="rate(3)">★</span>
+<span class="star" onclick="rate(4)">★</span>
+<span class="star" onclick="rate(5)">★</span>
+
+</div>
+
+<p id="ratingResult"></p>
+
+<div class="review-box">
+
+<h3>Write Your Review</h3>
+
+<textarea id="reviewInput"></textarea>
+
+<button onclick="addReview()">Submit Review</button>
+
+</div>
+
+<div id="reviewsList"></div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact Us</h2>
+
+<div class="contact">
+
+Owner: Priti Sharma <br>
+Phone: 7039281031 <br>
+WhatsApp: 9321496709 <br>
+Address: Usha Kiran Residency A Wing 002 Badlapur East <br>
+Timing: 10:00 AM – 10:00 PM <br><br>
+
+<a href="https://wa.me/919321496709">Chat on WhatsApp</a><br>
+
+<a href="https://www.instagram.com/glow_touch_salon1209">
+Instagram Page
+</a>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Location</h2>
+
+<div style="text-align:center">
+
+<iframe
+src="https://maps.google.com/maps?q=badlapur%20east&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="80%"
+height="350">
+</iframe>
+
+</div>
+
+</section>
+
+<a class="whatsapp" href="https://wa.me/919321496709">💬</a>
+
+<footer>
+
+© 2026 Touch & Glow Salon and Academy
+
+</footer>
+
+<script>
+
+function book(){
+alert("Appointment request submitted!")
+}
+
+function rate(stars){
+
+let allStars=document.querySelectorAll(".star")
+
+allStars.forEach((star,index)=>{
+
+if(index < stars){
+star.classList.add("active")
+}else{
+star.classList.remove("active")
+}
+
+})
+
+document.getElementById("ratingResult").innerText =
+"You rated this salon " + stars + " stars ⭐"
+
+}
+
+function addReview(){
+
+let text=document.getElementById("reviewInput").value
+
+if(text==="") return
+
+let review=document.createElement("div")
+
+review.className="review"
+
+review.innerText=text
+
+document.getElementById("reviewsList").appendChild(review)
+
+document.getElementById("reviewInput").value=""
+
+}
+
+</script>
+
+</body>
+</html>
